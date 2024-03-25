@@ -1,0 +1,28 @@
+<div class="min-vh-100" id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">
+                <img src="assets/img/icon_w.png" alt="Logo" width="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" (click)="manageMenu(mainMenu, 'toggle')">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div #mainMenu class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-2 mt-lg-0 text-center">
+                    <li class="nav-item" [id]="item.id" *ngFor="let item of menuItems">
+                        <a class="nav-link" role="button" [class.active]="item.active" (click)="navigate(item)" (click)="manageMenu(mainMenu, 'remove')">
+                            {{item.label | translate}}
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item" [id]="lang.id" *ngFor="let lang of languages" (click)="manageMenu(mainMenu, 'remove')">
+                        <a class="nav-link" role="button" (click)="changeLanguage(lang.id)">
+                            <img [src]="lang.src" [alt]="lang.text" width="30">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
