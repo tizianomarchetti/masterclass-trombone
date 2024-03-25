@@ -1,9 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { LangItem } from 'src/app/interface/common/lang-item';
 import { MenuItem } from 'src/app/interface/common/menu-item';
 import { AppService } from 'src/app/services/app.service';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-header',
@@ -15,8 +15,7 @@ export class HeaderComponent implements OnInit {
   languages: LangItem[];
   activePage: string;
 
-  constructor(private appService: AppService, private translate: TranslateService,
-    private router: Router) { }
+  constructor(private appService: AppService, private translate: TranslateService) { }
 
   ngOnInit() {
     this.appService.getLang().subscribe((res: any) => {
@@ -27,13 +26,8 @@ export class HeaderComponent implements OnInit {
       this.menuItems = this.menuBeToPage(res);
     });
 
-    /** per mantenere la classe css active sulla voce attiva di menu anche dopo refresh */
-    this.router.events.subscribe((e) => {
-      if (e instanceof NavigationEnd) {
-        this.menuItems.forEach((el) => {
-          el.active = el.url == e.url;
-        });
-      }
+    this.menuItems.forEach((el) => {
+      el.active = el.id == sessionStorage.getItem('activeMenuItem');
     });
   }
 
@@ -54,20 +48,24 @@ export class HeaderComponent implements OnInit {
   manageMenu(menu: HTMLElement, action: string) {
     /** action: toggle or remove */
     menu.classList[action]('show');
-    document.getElementById('nav').classList[(menu.classList.contains('show') ? 'remove' : 'add')]('bg-transparent')
-    document.getElementById('nav').classList[(menu.classList.contains('show') ? 'add' : 'remove')]('bg-black')
+    if (window.scrollY <= 10) {
+      document.getElementById('nav').classList[(menu.classList.contains('show') ? 'remove' : 'add')]('bg-transparent')
+      document.getElementById('nav').classList[(menu.classList.contains('show') ? 'add' : 'remove')]('bg-black')
+    }
   }
 
   navigate(item: MenuItem) {
-    console.log(item)
-    this.menuItems.forEach((el) => {
-      el.active = el.id == item.id;
-    });
-    document.getElementById(item.id).scrollIntoView();
-    this.router.navigate([item.url]);
+    if (item) {
+      this.menuItems.forEach((el) => {
+        el.active = el.id == item.id;
+      });
+    }
+    sessionStorage.setItem('activeMenuItem', item ? item.id : null);
+    // document.getElementById(item.id).scrollIntoView();
   }
 
   changeLanguage(codiceLingua: string) {
+    console.log(codiceLingua)
     sessionStorage.setItem("lang", codiceLingua);
     this.translate.use(codiceLingua);
   }

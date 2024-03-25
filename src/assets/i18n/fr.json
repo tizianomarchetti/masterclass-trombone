@@ -1,0 +1,10 @@
+{
+  "menu": {
+    "label": {
+        "program": "Programme",
+        "teacher": "Professeur",
+        "contact": "Contacts",
+        "subscription": "Inscription"
+    }
+  }
+}

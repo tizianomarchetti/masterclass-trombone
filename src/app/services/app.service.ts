@@ -19,15 +19,20 @@ export class AppService {
   getLang() {
     return of([
       {
-          "id": "it",
-          "alt": "Italiano",
-          "src": "assets/img/it.png"
+        "id": "it",
+        "alt": "Italiano",
+        "src": "assets/img/it.png"
       },
       {
-          "id": "en",
-          "alt": "Inglese",
-          "src": "assets/img/en.png"
-      }
+        "id": "en",
+        "alt": "Inglese",
+        "src": "assets/img/en.png"
+      },
+      {
+        "id": "fr",
+        "alt": "Francese",
+        "src": "assets/img/fr.png"
+    }
   ])
     return this.http.get(root + this.langUrl);
   }
@@ -35,40 +40,28 @@ export class AppService {
   getMenu() {
     return of([
       {
-          "id": "home",
-          "label": "menu.label.home",
-          "url": "/home",
-          "redirectUrl": "/",
-          "icon": "fa-solid fa-user",
-          "active": false
+        "id": "program",
+        "label": "menu.label.program",
+        "url": "/programma",
+        "active": false
       },
       {
-          "id": "education",
-          "label": "menu.label.education",
-          "url": "/education",
-          "icon": "fa-solid fa-graduation-cap",
-          "active": false
+        "id": "teacher",
+        "label": "menu.label.teacher",
+        "url": "/docente",
+        "active": false
       },
       {
-          "id": "experience",
-          "label": "menu.label.experience",
-          "url": "/experience",
-          "icon": "fa-solid fa-briefcase",
-          "active": false
+        "id": "contact",
+        "label": "menu.label.contact",
+        "url": "/contatti",
+        "active": false
       },
       {
-          "id": "skills",
-          "label": "menu.label.skills",
-          "url": "/skills",
-          "icon": "fa-solid fa-code",
-          "active": false
-      },
-      {
-          "id": "contact",
-          "label": "menu.label.contact",
-          "url": "/contact",
-          "icon": "fa-solid fa-envelope",
-          "active": false
+        "id": "subscription",
+        "label": "menu.label.subscription",
+        "url": "/iscrizione",
+        "active": false
       }
   ])
     return this.http.get(root + this.menuUrl);

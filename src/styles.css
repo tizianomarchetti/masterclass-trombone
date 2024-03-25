@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 #header {
     background-image: url(assets/img/diego.jpg);;
     background-size: cover;
@@ -15,16 +16,22 @@
 #site-title {
     font-size: 9vw;
     font-family: "Bebas Neue", sans-serif;
+    /* text-shadow: 2px 2px rgb(20,20,20); */
+}
+
+.text-shadow {
+    text-shadow: 2px 2px rgb(20,20,20);
 }
 
 @media screen and (orientation: portrait) {
     #site-title {
-        font-size: 7vh;
+        font-size: 7.5vh;
     }
 
     #title-section {
         position: absolute; 
         bottom: 0;
+        background-color: rgba(120,120,120,.3);
     }
 }
 
@@ -38,12 +45,23 @@
     background-color: black!important;
 }
 
-@media(max-width:991px) {
+@media screen and (max-width:991px) {
     .navbar-collapse{
         position: absolute;
         left: 0px;
         top: 98px;
         background: black none repeat scroll 0% 0%;
         width: 100%;
+    }
+
+    #site-title {
+        margin-top: 90px!important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .div-img {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
