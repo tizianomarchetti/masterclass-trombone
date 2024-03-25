@@ -57,10 +57,12 @@ export class HeaderComponent implements OnInit {
   }
 
   navigate(item: MenuItem) {
+    console.log(item)
     this.menuItems.forEach((el) => {
       el.active = el.id == item.id;
     });
     document.getElementById(item.id).scrollIntoView();
+    this.router.navigate([item.url]);
   }
 
   changeLanguage(codiceLingua: string) {
