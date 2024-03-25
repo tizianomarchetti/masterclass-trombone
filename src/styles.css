@@ -11,3 +11,39 @@
         background-size: contain;
     }
 }
+
+#site-title {
+    font-size: 9vw;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+@media screen and (orientation: portrait) {
+    #site-title {
+        font-size: 7vh;
+    }
+
+    #title-section {
+        position: absolute; 
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape) {
+    .d-custom-md-flex {
+        display: flex!important;
+    }
+}
+
+.bg-black {
+    background-color: black!important;
+}
+
+@media(max-width:991px) {
+    .navbar-collapse{
+        position: absolute;
+        left: 0px;
+        top: 98px;
+        background: black none repeat scroll 0% 0%;
+        width: 100%;
+    }
+}

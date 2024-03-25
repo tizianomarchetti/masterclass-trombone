@@ -54,6 +54,8 @@ export class HeaderComponent implements OnInit {
   manageMenu(menu: HTMLElement, action: string) {
     /** action: toggle or remove */
     menu.classList[action]('show');
+    document.getElementById('nav').classList[(menu.classList.contains('show') ? 'remove' : 'add')]('bg-transparent')
+    document.getElementById('nav').classList[(menu.classList.contains('show') ? 'add' : 'remove')]('bg-black')
   }
 
   navigate(item: MenuItem) {

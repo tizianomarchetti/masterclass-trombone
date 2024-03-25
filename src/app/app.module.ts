@@ -10,14 +10,12 @@ import { NgHttpLoaderModule } from 'ng-http-loader';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './component/home/home.component';
-import { EducationComponent } from './component/education/education.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    EducationComponent
   ],
   imports: [
     BrowserModule,
