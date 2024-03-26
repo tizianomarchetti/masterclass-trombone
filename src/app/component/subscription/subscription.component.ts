@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubscriptionComponent implements OnInit {
 
+  copied = {
+    intestazione: false,
+    iban: false,
+    causale: false
+  }
+
   form = {
     name: '',
     surname: '',
@@ -14,7 +20,8 @@ export class SubscriptionComponent implements OnInit {
     email: '',
     fullPack: false,
     brani: [],
-    intolleranze: ''
+    intolleranze: '',
+    file: null
   }
 
   validForm = {
@@ -23,7 +30,8 @@ export class SubscriptionComponent implements OnInit {
     phone: true,
     email: true,
     fullPack: true,
-    brani: []
+    brani: [],
+    file: true
   }
 
   valid: boolean = true;
@@ -31,6 +39,15 @@ export class SubscriptionComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  copy(evt: any, part: string) {
+    navigator.clipboard.writeText(evt.target.innerText).then(() => {
+      this.copied[part] = true;
+      setTimeout(() => {
+        this.copied[part] = false;
+      }, 3000);
+    }).catch(e => console.error(e));
   }
 
   addBrano() {
@@ -52,9 +69,17 @@ export class SubscriptionComponent implements OnInit {
       this.validateForm();
   }
 
-  download() {
-    if (this.validateForm()) {
+  uploadFile(event) {
+    this.form.file = event.target.files[0];
 
+    if (!this.valid)
+      this.validateForm();
+  }
+
+  download() {
+    console.log(this.form)
+    if (this.validateForm()) {
+      
     }
   }
 
@@ -66,6 +91,7 @@ export class SubscriptionComponent implements OnInit {
     this.validForm.phone = (this.form.phone !== null && this.form.phone !== '');
     this.validForm.email = (this.form.email !== null && this.form.email !== '');
     this.validForm.fullPack = this.form.fullPack != null;
+    this.validForm.file = this.form.file !== null;
 
     this.form.brani.forEach(brano => {
       this.validForm.brani[this.form.brani.indexOf(brano)] = {
@@ -81,8 +107,6 @@ export class SubscriptionComponent implements OnInit {
     this.validForm.brani.forEach(brano => {
       if (!brano.title || !brano.author) this.valid = false;
     })
-
-    console.log(this.validForm)
 
     if (!this.valid) {
       document.getElementById('errorMessage').scrollIntoView();

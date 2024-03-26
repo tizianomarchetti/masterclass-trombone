@@ -3,41 +3,65 @@
         <h1 class="text-red">{{'menu.label.subscription' | translate}}</h1>
     </div>
     
-    <div class="row mt-3">
+    <div id="errorMessage" class="row mt-3">
         <p class="mb-4">
-            Iscriversi è semplice
+            Iscriversi è semplice:
         </p>
-        <ul class="ms-md-5">
-            <li class="mb-3"><strong>Compila</strong> il modulo qui sotto o, se preferisci, <a href="">scarica il modulo</a> da compilare manualmente</li>
-            <li class="mb-3"><strong>Scaricalo</strong> in PDF e firmalo</li>
-            <li class="mb-3">Invialo via <strong>WhatsApp</strong> a Francesco (<a href="https://wa.me/+393342791655">334 279 1655</a>) 
-                o Andrea (<a href="https://wa.me/+393384241404">338 424 1404</a>) 
-                o per <strong>email</strong> a <a href="mailto:banda.giuseppeverdi@libero.it">banda.giuseppeverdi@libero.it</a>
-            </li>
-            <li>Invia anche una copia dell'avvenuto <strong>pagamento</strong> della quota di iscrizione</li>
+        <ul class="list-unstyled">
+            <li class="mb-3"><strong>Compila</strong> il modulo qui sotto</li>
+            <li class="mb-3"><strong>Allega</strong> una copia dell'avvenuto pagamento tramite bonifico (scorri per i dettagli)</li>
+            <li class="mb-3"><strong>Invia</strong> tramite l'apposito pulsante</li>
         </ul>
     </div>
 
-    <div class="row" [class.pt-4]="!valid" id="errorMessage">
+    <div class="row" [class.pt-4]="!valid">
         <p *ngIf="!valid" class="text-danger fw-bold">Compilare correttamente i campi obbligatori</p>
+    </div>
+
+    <div class="row m-2 mt-3 p-3 border border-2" style="border-color: #8e1818!important;">
+        <p><small><em>(clicca sulle parti in grassetto per copiare i dati)</em></small></p>
+        <ul class="list-unstyled">
+            <li class="mb-2">Bonifico intestato a 
+                <strong role="button" [class.text-success]="copied.intestazione" (click)="copy($event, 'intestazione')">
+                    {{!copied.intestazione ? 'Associazione Culturale Filarmonica G. Verdi' : 'Intestazione copiata!'}}
+                    &nbsp;<i *ngIf="copied.intestazione" class="fa-solid fa-check text-success"></i>
+                </strong>
+            </li>
+            <li class="mb-2">IBAN 
+                <strong role="button" [class.text-success]="copied.iban" (click)="copy($event, 'iban')">
+                    {{!copied.iban ? 'IT53D546782632106546216' : 'Codice copiato!'}}
+                    &nbsp;<i *ngIf="copied.iban" class="fa-solid fa-check text-success"></i>
+                </strong>
+            </li> 
+            <li class="mb-2">Causale 
+                <strong role="button" [class.text-success]="copied.causale" (click)="copy($event, 'causale')">
+                    {{!copied.causale ? 'Iscrizione Masterclass trombone 2024' : 'Causale copiata!'}}
+                    &nbsp;<i *ngIf="copied.causale" class="fa-solid fa-check text-success"></i>
+                </strong>
+            </li>
+        </ul>
     </div>
     
     <form class="row g-3 mt-3">
         <div class="col-md-6">
             <label for="name" class="form-label fw-bold">Nome*</label>
-            <input type="text" class="form-control" [class.border-danger]="!validForm.name" (keyup)="!valid ? validateForm() : null" id="name" name="name" [(ngModel)]="form.name">
+            <input type="text" class="form-control" [class.border-danger]="!validForm.name" (keyup)="!valid ? validateForm() : null" id="name" name="name" 
+                [(ngModel)]="form.name">
         </div>
         <div class="col-md-6">
             <label for="surname" class="form-label fw-bold">Cognome*</label>
-            <input type="text" class="form-control" [class.border-danger]="!validForm.surname" (keyup)="!valid ? validateForm() : null" id="surname" name="surname" [(ngModel)]="form.surname">
+            <input type="text" class="form-control" [class.border-danger]="!validForm.surname" (keyup)="!valid ? validateForm() : null" id="surname" name="surname" 
+                [(ngModel)]="form.surname">
         </div>
         <div class="col-md-6">
             <label for="phone" class="form-label fw-bold">Telefono*</label>
-            <input type="number" class="form-control" [class.border-danger]="!validForm.phone" (keyup)="!valid ? validateForm() : null" id="phone" name="phone" [(ngModel)]="form.phone">
+            <input type="number" class="form-control" [class.border-danger]="!validForm.phone" (keyup)="!valid ? validateForm() : null" id="phone" name="phone" 
+                [(ngModel)]="form.phone">
         </div>
         <div class="col-md-6">
             <label for="email" class="form-label fw-bold">Email*</label>
-            <input type="email" class="form-control" [class.border-danger]="!validForm.email" (keyup)="!valid ? validateForm() : null" id="email" name="email" [(ngModel)]="form.email">
+            <input type="email" class="form-control" [class.border-danger]="!validForm.email" (keyup)="!valid ? validateForm() : null" id="email" name="email" 
+                [(ngModel)]="form.email">
         </div>
         <fieldset class="col-12 py-4">
             <div class="form-check" role="button">
@@ -86,9 +110,33 @@
             <label for="intolleranze" class="form-label fw-bold">Eventuali intolleranze</label>
             <textarea class="form-control" id="intolleranze" rows="3" name="intolleranze" [(ngModel)]="form.intolleranze"></textarea>
         </div>
+
+        <div class="col-12">
+            <label for="formFile" class="form-label fw-bold">Ricevuta bonifico*</label>
+            <input class="form-control" [class.border-danger]="!validForm.file" type="file" id="formFile" 
+                accept="application/pdf" (change)="uploadFile($event)">
+        </div>
         
         <div class="col-12 mt-5">
-            <button type="submit" (click)="download()" class="btn bg-red text-light">Scarica PDF compilato</button>
+            <button type="submit" (click)="download()" class="btn bg-red text-light w-100">Invia</button>
         </div>
     </form>
+
+    <div class="row mt-5">
+        <p>Se invece sei legato alle vecchie maniere, <a class="fw-bold" href="">scarica il modulo</a> da compilare manualmente e 
+            invialo via <strong>WhatsApp</strong> a Francesco (<a href="https://wa.me/+393342791655">334 279 1655</a>) 
+            o Andrea (<a href="https://wa.me/+393384241404">338 424 1404</a>) 
+            o per <strong>email</strong> a <a href="mailto:banda.giuseppeverdi@libero.it">banda.giuseppeverdi@libero.it</a>, 
+            allegando anche una <strong>copia dell'avvenuto pagamento</strong>.
+        </p>
+        <!-- <ul class="list-unstyled">
+            <li class="mb-3"><strong>Compila</strong> il modulo qui sotto o, se preferisci, <a href="">scarica il modulo</a> da compilare manualmente</li>
+            <li class="mb-3"><strong>Scaricalo</strong> in PDF e firmalo</li>
+            <li class="mb-3">Invialo via <strong>WhatsApp</strong> a Francesco (<a href="https://wa.me/+393342791655">334 279 1655</a>) 
+                o Andrea (<a href="https://wa.me/+393384241404">338 424 1404</a>) 
+                o per <strong>email</strong> a <a href="mailto:banda.giuseppeverdi@libero.it">banda.giuseppeverdi@libero.it</a>
+            </li>
+            <li>Invia anche una copia dell'avvenuto <strong>pagamento</strong> della quota di iscrizione (scorri per i dettagli)</li>
+        </ul> -->
+    </div>
 </div>
