@@ -10,12 +10,22 @@ import { NgHttpLoaderModule } from 'ng-http-loader';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './component/home/home.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { ProgramComponent } from './component/program/program.component';
+import { TeacherComponent } from './component/teacher/teacher.component';
+import { ContactComponent } from './component/contact/contact.component';
+import { SubscriptionComponent } from './component/subscription/subscription.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
+    FooterComponent,
+    ProgramComponent,
+    TeacherComponent,
+    ContactComponent,
+    SubscriptionComponent,
   ],
   imports: [
     BrowserModule,
