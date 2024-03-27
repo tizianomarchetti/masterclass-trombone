@@ -42,7 +42,7 @@
         </ul>
     </div>
     
-    <form class="row g-3 mt-3">
+    <form class="row g-3 mt-3" enctype="multipart/form-data">
         <div class="col-md-6">
             <label for="name" class="form-label fw-bold">Nome*</label>
             <input type="text" class="form-control" [class.border-danger]="!validForm.name" (keyup)="!valid ? validateForm() : null" id="name" name="name" 
@@ -113,8 +113,14 @@
 
         <div class="col-12">
             <label for="formFile" class="form-label fw-bold">Ricevuta bonifico*</label>
-            <input class="form-control" [class.border-danger]="!validForm.file" type="file" id="formFile" 
-                accept="application/pdf" (change)="uploadFile($event)">
+            <div class="d-flex">
+                <input class="form-control" [class.border-danger]="!validForm.file" type="file" id="formFile" 
+                    accept="application/pdf" (change)="uploadFile($event)">
+                <div *ngIf="form.file !== null" class="p-2">
+                    <i class="fa-solid fa-x text-red" role="button" (click)="uploadFile(null)"></i>
+                </div>
+            </div>
+            <small *ngIf="formatError" class="text-danger fw-bold">Formato non valido</small>
         </div>
         
         <div class="col-12 mt-5">
@@ -123,8 +129,9 @@
     </form>
 
     <div class="row mt-5">
-        <p>Se invece sei legato alle vecchie maniere, <a class="fw-bold" href="">scarica il modulo</a> da compilare manualmente e 
-            invialo via <strong>WhatsApp</strong> a Francesco (<a href="https://wa.me/+393342791655">334 279 1655</a>) 
+        <p>Se invece sei legato alle vecchie maniere, <a class="fw-bold" href="assets\MODULO_ISCRIZIONE.pdf">scarica il modulo</a> 
+            da compilare manualmente e invialo via <strong>WhatsApp</strong> a 
+            Francesco (<a href="https://wa.me/+393342791655">334 279 1655</a>) 
             o Andrea (<a href="https://wa.me/+393384241404">338 424 1404</a>) 
             o per <strong>email</strong> a <a href="mailto:banda.giuseppeverdi@libero.it">banda.giuseppeverdi@libero.it</a>, 
             allegando anche una <strong>copia dell'avvenuto pagamento</strong>.
@@ -138,5 +145,23 @@
             </li>
             <li>Invia anche una copia dell'avvenuto <strong>pagamento</strong> della quota di iscrizione (scorri per i dettagli)</li>
         </ul> -->
+    </div>
+</div>
+
+<div class="modal fade" id="esito" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Iscrizione Masterclass</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>{{esito.message}}</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" [class]="'btn btn-' + (esito.ok ? 'success' : 'danger') + ' text-light'" 
+                data-bs-dismiss="modal">Chiudi</button>
+        </div>
+        </div>
     </div>
 </div>

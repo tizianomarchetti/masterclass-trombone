@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { of } from 'rxjs';
 
 // const root = "https://web-cv-back-end.onrender.com/";
-const root = "http://localhost:8080/";
+const root = "https://masterclasstrombone.altervista.org/rest/api/v1/";
 
 @Injectable({
   providedIn: 'root'
@@ -65,6 +65,10 @@ export class AppService {
       }
   ])
     return this.http.get(root + this.menuUrl);
+  }
+
+  sendSubscription(form: any) {
+    return this.http.post(root + 'sendSubscription', form, {responseType: 'text'});
   }
 
 }
