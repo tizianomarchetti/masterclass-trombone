@@ -14,8 +14,8 @@ export class SubscriptionComponent implements OnInit {
     // 'image/png', 'image/jpg', 'image/jpeg', //img
     // 'vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', //xls
     // 'msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', //doc
-    'application/pdf', //pdf
-    'text/plain' //txt
+    'application/pdf' //pdf
+    // 'text/plain' //txt
   ];
 
   copied = {
