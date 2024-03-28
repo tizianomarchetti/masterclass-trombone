@@ -121,7 +121,7 @@ export class SubscriptionComponent implements OnInit {
       this.validateForm();
   }
 
-  download() {
+  sendSubscription() {
     console.log(this.form)
     if (this.validateForm(true)) {
       const formData = new FormData();
@@ -177,7 +177,7 @@ export class SubscriptionComponent implements OnInit {
     this.validForm.name = (this.form.name !== null && this.form.name !== '');
     this.validForm.surname = (this.form.surname !== null && this.form.surname !== '');
     this.validForm.phone = (this.form.phone !== null && this.form.phone !== '');
-    this.validForm.email = (this.form.email !== null && this.form.email !== '');
+    this.validForm.email = (this.form.email !== null && this.form.email !== '' && this.checkMailFormat());
     this.validForm.fullPack = this.form.fullPack != null;
     this.validForm.file = this.form.file !== null && this.validFormat.includes(this.fileType);
 
@@ -203,6 +203,13 @@ export class SubscriptionComponent implements OnInit {
     }
 
     return this.valid;
+  }
+
+  checkMailFormat() {
+    let mailFormatRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (this.form.email !== null && !this.form.email.match(mailFormatRegex)) 
+      return false;
+    return true;
   }
 
 }

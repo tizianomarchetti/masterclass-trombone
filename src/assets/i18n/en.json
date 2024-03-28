@@ -2,9 +2,125 @@
     "menu": {
       "label": {
           "program": "Program",
-          "teacher": "Teacher",
+          "teacher": "Professor",
           "contact": "Contact",
-          "subscription": "Subscription"
+          "subscription": "Registration"
+      }
+    },
+    "text": {
+      "header": {
+        "with": "With",
+        "subscribe": "Sign up now"
+      },
+      "program": {
+        "date": "August 27-31, 2024",
+        "lessons": "<strong>45 minutes</strong> individual lessons every day for each student",
+        "ensemble": "<strong>Ensemble music</strong> lessons and <strong>orchestral excerpts</strong> in section",
+        "duo": "<strong>Duo Di Mario - Bassi</strong> concert on Thursday, August 29th at 9:00PM",
+        "concert": "<strong>Final concert</strong> by the students on Saturday, August 31st at 6:00PM",
+        "accomodation": "It will be the responsibility of the Cultural Association Philharmonic G. Verdi to arrange accommodation for all enrolled students, <strong>completely free of charge</strong>.",
+        "meal": "To meet the needs of students coming from afar, we offer a registration package that includes <strong>lunches and dinners</strong> for all actual days of the masterclass, at popular prices.",
+        "subscription": "Below the breakdown of the registration costs",
+        "master_only": "Masterclass only",
+        "full_pack": "Full board",
+        "details": {
+          "subscription": "Course registration",
+          "accomodation": "Free accommodation",
+          "breakfast": "4 breakfasts",
+          "lunch": "4 lunches",
+          "dinner": "4 dinners"
+        },
+        "condition": "The actual start of the course is conditioned upon reaching a minimum of 8 enrolled students."
+      },
+      "teacher": {
+        "read_more": "Read more...",
+        "hide": "Show less...",
+        "diego": {
+          "quote": [
+            {
+              "quote": "He is the best solo trombonist of his generation in Italy",
+              "source": "Ian Bousfield",
+              "cite": "former principal trombonist of the London Symphony Orchestra and the Vienna Philharmonic, currently teaching at the Hochschule der Künste Bern, and an international soloist"
+            },
+            {
+              "quote": "He is an artist of great skill, with a meticulous mastery of technique and a full sound across all registers",
+              "source": "Joseph Alessi",
+              "cite": "principal trombonist of the New York Philharmonic, faculty member at the Juilliard School, and international soloist"
+            }
+          ],
+          "intro": [
+            "<strong>Diego di Mario</strong> has been the Principal Trombonist of the RAI National Symphony Orchestra since 2015.",
+            "He graduated with top honors at the age of 17 from the G. Briccialdi Higher Institute of Musical Studies in Terni. He furthered his studies at the Fiesole Music School, becoming the Principal Trombonist of the Orchestra Giovanile Italiana."
+          ],
+          "body": [
+            "In 2008, he won the audition for the position of Second Trombonist at the Opéra Royal de Wallonie in Liège, where he remained until 2009.",
+            "He has collaborated with the Liège Philharmonic Orchestra, the Orchestra of the Maggio Musicale Fiorentino, Spira Mirabilis Orchestra, the Haydn Orchestra of Bolzano and Trento, the Orchestra Regionale Toscana, the Orchestra of the Teatro Regio di Torino, the Orchestra of the Teatro Petruzzelli di Bari, and the Mozart Orchestra. He is regularly invited as Principal Trombonist by the Monte Carlo Philharmonic Orchestra and the Turin Philharmonic Orchestra.",
+            "During the 2011-2012 season, he held the position of Principal Trombonist with the Orchestra of Teatro alla Scala in Milan and the La Scala Philharmonic Orchestra, with which he performed Maurice Ravel's “Bolero” conducted by Maestro Daniel Barenboim at Teatro alla Scala and on a European tour. As part of the La Scala Orchestra, he also recorded the CD “Viva Verdi” and the DVD “Gershwin Live at La Scala” under the direction of Maestro Riccardo Chailly",
+            "He was the Principal Trombonist of the Rome Symphony Orchestra for the 2013-2014 season and, in the same year, made his debut as a soloist performing Lars-Erik Larsson's “Concertino” for trombone and string orchestra at the Teatro del Fuoco in Foggia.",
+            "As a soloist, he has performed with important ensembles such as the Foronovana Philharmonic and the B. Bruni Orchestra of Cuneo.",
+            "He is a member of the QUARTETTO ITALIANO DI TROMBONI, with which he holds masterclasses and concerts both in Italy and abroad. With this ensemble, he has recorded four CDs: two live albums (Masterbrass II and Masterbrass IV featuring soloist Stefan Schulz, bass trombonist of the Berlin Philharmonic), Passe-temps for 4 - the first CD entirely dedicated to the Italian Trombone Quartet - and The World on a Slide, a venture into jazz with music by Marcello Rosa.",
+            "In April 2018, the Quartet embarked on a tour of various European cities and the United States (including New York, at the renowned Juilliard School). With the Quartet, he also participated in the World Premiere of Nicola Ferro's composition “Four for Four” for double trombone quartet, alongside the World Trombone Quartet (J. Alessi, J. van Rijen, M. Becquet, S. Schulz)",
+            "Since 2009, he has been performing as a duo with pianist Hilary Bassi, appearing at major festivals in Italy and abroad (France, Belgium, Germany, Russia) and winning the Overall First Prize at numerous national and international chamber music competitions such as the “G. Rospigliosi” in Lamporecchio, “Riviera Etrusca” in Piombino, “Città di Piove di Sacco”, “Luigi Nono” in Venaria Reale (where the Duo also won the Special Twentieth Century Prize). The Duo has been dedicated compositions by important contemporary composers such as Luigi Giachino and Riccardo Panfili.",
+            "Highly active in chamber music, he was invited by CAMERATA BERN for a European tour, collaborating with artists such as Patricia Kopatchinskaja and Anna Prohaska.",
+            "He recently participated in the XVI International Tchaikovsky Competition in St. Petersburg, being one of the 13 trombonists selected worldwide to represent the Brass category for the first time in this prestigious solo competition. From 2020 to 2022, he was a teacher of the brass class at the “A. Rebora” Civic School of Music in Ovada. He is the president of the Santa Cecilia Cultural Association, which promotes the development and dissemination of musical culture, art, and culture in general. For the academic year 2022/23, he was a teacher for the first level trombone master's program at the “G. Puccini” Conservatory in La Spezia."
+          ]
+        },
+        "hilary": {
+          "intro": [
+            "<strong>Hilary Bassi</strong> is an accompanist pianist at the G. Cantelli Conservatory in Novara and artistic director of the Associazione Culturale Santa Cecilia.",
+            "She graduated at the age of 19 from the Conservatory of Alessandria with top marks and in 2010 she obtained the academic diploma of II level, also with top marks, from the Conservatory of Terni."
+          ],
+          "body": [
+            "She regularly dedicates herself to the activity of accompanist pianist and chamber musician, performing in Italy, Belgium, the Netherlands, France, Russia, Germany, Slovakia, and winning numerous first prizes in national and international chamber music competitions.",
+            "She regularly collaborates with internationally renowned soloists and musicians who are part of the most important Italian and foreign orchestras (including the RAI National Symphony Orchestra, the Orchestra of the Teatro alla Scala in Milan, the Turin Teatro Regio, the Berliner Philharmoniker, the London Symphony Orchestra, the Wiener Philharmoniker, the Japan Philharmonic, the Deutsche Oper Berlin, the Orchestre de la Suisse Romande in Geneva) as well as teachers in schools of higher education (Haute école de musique in Geneva, Royal Conservatoire in Brussels, Hochschule der Künste in Bern, Hochschule für Musik Freiburg, Conservatoire National Supérieur de Musique et de Danse in Paris) such as Stefan Schulz, Ian Bousfield, Michael Buchanan, Ottaviano Cristofoli, Jamie Williams, Fabrice Millischer, Marco Braito, Vincent Lepape, Matteo De Luca, Devid Ceste, Andrea Bandini, Gabriele Cassone, and Roberto Miele.",
+            "She was also the pianist of Roberto Ranfaldi, first violin of the RAI National Symphony Orchestra at the Perosi Academy in Biella and for ObiettivOrchestra (a course held by the Principal Players of the Turin Teatro Regio Philharmonic Orchestra)."
+          ]
+        },
+        "duo": {
+          "intro": [
+            "The <strong>Duo Di Mario - Bassi</strong> was formed in 2009 with the aim of embarking on a research path to deepen and promote the chamber repertoire for trombone and piano, which is as interesting as it is rarely heard."
+          ],
+          "body": [
+            "They perform in Italy and abroad (France, Belgium, Russia, Germany), playing for various events and organizations such as the Folliamusica festival, the Umbrian Philharmonic Association of Terni, the De Laugier Cultural Center in Portoferraio, the San Giacomo Festival in Bologna, the Friends of the Opera in Pistoia and the Friends of Carlo Felice in Genoa, the Friends for Music in Venaria Reale, the Turin Music Academy, Hirmos in Reggio Emilia, the Umanitaria Society in Milan, the 30th edition of ECIS at La Sapienza University in Rome, the SCLAB festival in Ravenna, and the Fiati Festival in Novara.",
+            "The Duo has won the 1st Prize Overall for the Chamber Music category in competitions such as the Rospigliosi Competition in Lamporecchio, the Riviera Etrusca Competition in Piombino, and the Luigi Nono Competition in Venaria Reale, where they also receive the Special Novecento Prize (awarded to all categories for the best performance of a piece written after 1950), as well as the 1st Prize in the City of Piove di Sacco Competition.",
+            "Compositions by Riccardo Panfili (Iubilatio Doctoris Fausti) and Luigi Giachino (Sentieri Ritrovati) are dedicated to the Duo."
+          ]
+        }
+      },
+      "subscription": {
+        "intro": "Signing up is easy:",
+        "form_fill": "<strong>Fill out</strong> the form below",
+        "attachement": "Please <strong>attach</strong> a copy of the completed payment via bank transfer (scroll down for details)",
+        "sending": "<strong>Send</strong> using the designated button",
+        "payment": {
+          "copy": "Click on the bold parts to copy the data",
+          "to": "Bank transfer made payable to",
+          "reference": "Reference",
+          "copied": {
+            "to": "Recipient copied!",
+            "code": "Code copied!",
+            "reference": "Reference copied!"
+          }
+        },
+        "form": {
+          "error": "Correctly fill in the mandatory fields",
+          "name": "Name",
+          "surname": "Surname",
+          "phone": "Phone",
+          "email": "Email",
+          "pieces": {
+            "header": "Pieces to study",
+            "title": "Title",
+            "author": "Author",
+            "remove": "Remove",
+            "add": "Add piece"
+          },
+          "intolerances": "Any intolerances",
+          "receipt": "Transfer receipt",
+          "format": "Invalid format, please attach a .pdf file",
+          "send": "Send",
+          "alternative": "If instead you prefer traditional methods, <a class=\"fw-bold\" href=\"assets\\MODULO_ISCRIZIONE.pdf\">download the form</a> to fill in manually and send it via <strong>WhatsApp</strong> to Francesco (<a href=\"https://wa.me/+393342791655\">334 279 1655</a>) or Andrea (<a href=\"https://wa.me/+393384241404\">338 424 1404</a>) or by <strong>email</strong> to <a href=\"mailto:banda.giuseppeverdi@libero.it\">banda.giuseppeverdi@libero.it</a>, also attaching a <strong>copy of the completed payment</strong>."
+        }
       }
     }
   }

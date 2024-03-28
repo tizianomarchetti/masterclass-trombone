@@ -6,5 +6,121 @@
         "contact": "Contacts",
         "subscription": "Inscription"
     }
+  },
+  "text": {
+    "header": {
+      "with": "Avec le",
+      "subscribe": "Inscrivez-vous maintenant"
+    },
+    "program": {
+      "date": "27-31 août 2024",
+      "lessons": "Cours individuels de <strong>45 minutes</strong> chaque jour pour chaque élève",
+      "ensemble": "Cours de <strong>musique d'ensemble</strong> et <strong>extraits d'orchestre</strong> en section",
+      "duo": "Concert du <strong>Duo Di Mario - Bassi</strong> jeudi 29 août à 21 heures",
+      "concert": "<strong>Concert final</strong> des élèves samedi 31 août à 18 heures",
+      "accomodation": "Sera de la responsabilité de l'Association Culturelle Philharmonique G. Verdi de veiller à l'aménagement des locaux pour le logement de tous les élèves inscrits, de manière <strong>totalement gratuite</strong>.",
+      "meal": "Pour répondre aux besoins des élèves venant de loin, nous proposons un forfait d'inscription comprenant également <strong>les déjeuners et dîners</strong> pour tous les jours effectifs de la masterclass, à des prix populaires.",
+      "subscription": "Ci-dessous le détail des frais d'inscription",
+      "master_only": "Masterclass seulement",
+      "full_pack": "Pension complète",
+      "details": {
+        "subscription": "Inscription au cours",
+        "accomodation": "Hébergement gratuit",
+        "breakfast": "4 petits déjeuners",
+        "lunch": "4 déjeuners",
+        "dinner": "4 dîners"
+      },
+      "condition": "Le début effectif du cours est conditionné par l'atteinte d'un minimum de 8 élèves inscrits."
+    },
+    "teacher": {
+      "read_more": "En savoir plus...",
+      "hide": "Afficher moins...",
+      "diego": {
+        "quote": [
+          {
+            "quote": "Il est le meilleur tromboniste soliste de sa génération en Italie",
+            "source": "Ian Bousfield",
+            "cite": "ancien premier tromboniste de l'Orchestre symphonique de Londres et de l'Orchestre philharmonique de Vienne, actuellement professeur à la Haute école des arts de Berne et soliste international"
+          },
+          {
+            "quote": "C'est un artiste d'une grande habileté, avec une maîtrise méticuleuse de la technique et un son complet dans tous les registres",
+            "source": "Joseph Alessi",
+            "cite": "Premier tromboniste de l'Orchestre philharmonique de New York, professeur à la Juilliard School, et soliste international"
+          }
+        ],
+        "intro": [
+          "<strong>Diego di Mario</strong> est premier tromboniste de l'Orchestre symphonique national de la RAI depuis 2015.",
+          "Il obtient son diplôme avec mention très bien à l'âge de 17 ans à l'Institut supérieur d'études musicales G. Briccialdi de Terni. Il se perfectionne à l'École de musique de Fiesole, devenant premier tromboniste de l'Orchestra Giovanile Italiana."
+        ],
+        "body": [
+          "En 2008, il remporte le concours pour le poste de deuxième tromboniste à l'Opéra Royal de Wallonie à Liège, où il reste jusqu'en 2009.",
+          "Il a collaboré avec l'Orchestre Philharmonique de Liège, l'Orchestre du Maggio Musicale Fiorentino, l'Orchestre Spira Mirabilis, l'Orchestre « Haydn » de Bolzano et Trento, l'Orchestre Régional de Toscane, l'Orchestre du Teatro Regio di Torino, l'Orchestre du Teatro Petruzzelli di Bari et l'Orchestre Mozart ; il est régulièrement invité en tant que premier tromboniste par l'Orchestre Philharmonique de Monte Carlo et l'Orchestre Philharmonique de Turin.",
+          "Pendant la saison 2011-2012, il a occupé le poste de premier tromboniste à l'Orchestre du Teatro alla Scala de Milan et à l'Orchestre Philharmonique de la Scala avec lequel il a interprété le “Boléro” de M. Ravel sous la direction de M. Daniel Barenboim aussi bien au Teatro alla Scala que lors d'une tournée européenne. Toujours en tant que membre de l'orchestre de La Scala, il a enregistré le CD “Viva Verdi” et le DVD “Gershwin live at la Scala” sous la direction de M. Riccardo Chailly.",
+          "Il a été premier tromboniste de l'Orchestre Symphonique de Rome pour la saison 2013-2014 et, la même année, il a fait ses débuts en tant que soliste en interprétant le “Concertino” de L. E. Larsson pour trombone et orchestre à cordes au Teatro del Fuoco di Foggia.",
+          "En tant que soliste, il s'est produit avec des ensembles importants tels que la Philharmonie Foronovana, l'orchestre “B. Bruni” de Cuneo.",
+          "Il fait partie du QUARTETTO ITALIANO DI TROMBONI, avec lequel il donne des masterclasses et des concerts en Italie et à l'étranger. Avec cette formation, il a enregistré quatre CD : deux enregistrements live (Masterbrass II et Masterbrass IV avec le soliste Stefan Schulz - tromboniste basse des Berliner Philharmoniker), Passe-temps for 4 - le premier CD entièrement dédié au Quatuor Italien de Trombones - et The World on a Slide, une incursion dans le jazz avec des musiques de Marcello Rosa.",
+          "En avril 2018, le quatuor a entrepris une tournée dans différentes villes européennes et aux États-Unis (dont New York, à la célèbre Juilliard School). Avec le Quatuor, il a également participé à la première mondiale de la pièce “Four for four” de Nicola Ferro, pour double quatuor de trombones, aux côtés du World Trombone Quartet (J. Alessi, J. van Rijen, M. Becquet, S. Schulz)",
+          "Depuis 2009, il se produit en duo avec la pianiste Hilary Bassi, se produisant lors de festivals importants en Italie et à l'étranger (France, Belgique, Allemagne, Russie) et remportant le premier prix absolu à de nombreux concours de musique de chambre nationaux et internationaux tels que le “G. Rospigliosi” de Lamporecchio, “Riviera Etrusca” de Piombino, “Città di Piove di Sacco”, “Luigi Nono” de Venaria Reale (où le duo remporte également le Prix spécial Novecento). Des pièces de compositeurs contemporains importants tels que Luigi Giachino et Riccardo Panfili ont été dédiées au Duo.",
+          "Très actif dans le domaine de la musique de chambre, il a été invité par la CAMERATA BERN pour une tournée européenne, collaborant avec des artistes de renom tels que Patricia Kopatchinskaja et Anna Prohaska.",
+          "Il a récemment participé à la XVIe édition du Concours international Tchaïkovski à Saint-Pétersbourg, étant l'un des 13 trombonistes sélectionnés dans le monde entier pour représenter la catégorie “Cuivres” pour la première fois dans cette prestigieuse compétition solo. De 2020 à 2022, il a été enseignant de la classe de cuivres à la Civica Scuola di Musica “A. Rebora” d'Ovada. Il est président de l'Association culturelle Santa Cecilia, qui promeut le développement et la diffusion de la culture musicale, de l'art et de la culture en général. Pour l'année académique 2022/23, il a été enseignant pour le master de premier cycle en trombone au Conservatoire “G. Puccini” de La Spezia."
+        ]
+      },
+      "hilary": {
+        "intro": [
+          "<strong>Hilary Bassi</strong> est pianiste accompagnatrice au Conservatoire G. Cantelli de Novare et directrice artistique de l'Associazione Culturale Santa Cecilia.",
+          "Elle est diplômée à l'âge de 19 ans du Conservatoire d'Alessandria avec les meilleures notes et en 2010, elle obtient le diplôme académique de niveau II, également avec les meilleures notes, du Conservatoire de Terni."
+        ],
+        "body": [
+          "Elle se consacre régulièrement à l'activité de pianiste accompagnatrice et de musicienne de chambre, se produisant en Italie, en Belgique, aux Pays-Bas, en France, en Russie, en Allemagne, en Slovaquie, et remportant de nombreux premiers prix dans des concours nationaux et internationaux de musique de chambre.",
+          "Elle collabore régulièrement avec des solistes de renommée internationale et des musiciens faisant partie des orchestres italiens et étrangers les plus importants (notamment l'Orchestre symphonique national de la RAI, l'Orchestre du Teatro alla Scala de Milan, le Teatro Regio de Turin, le Berliner Philharmoniker, le London Symphony Orchestra, le Wiener Philharmoniker, le Japan Philharmonic, la Deutsche Oper Berlin, l'Orchestre de la Suisse Romande à Genève) ainsi que des professeurs dans des écoles de perfectionnement (Haute école de musique de Genève, Conservatoire Royal de Bruxelles, Hochschule der Künste à Berne, Hochschule für Musik Freiburg, Conservatoire National Supérieur de Musique et de Danse à Paris) tels que Stefan Schulz, Ian Bousfield, Michael Buchanan, Ottaviano Cristofoli, Jamie Williams, Fabrice Millischer, Marco Braito, Vincent Lepape, Matteo De Luca, Devid Ceste, Andrea Bandini, Gabriele Cassone et Roberto Miele.",
+          "Elle a également été la pianiste de Roberto Ranfaldi, premier violon de l'Orchestre symphonique national de la RAI à l'Académie Perosi de Biella et pour ObiettivOrchestra (un cours donné par les principaux musiciens de l'Orchestre Philharmonique du Teatro Regio de Turin)."
+        ]
+      },
+      "duo": {
+        "intro": [
+          "Le <strong>Duo Di Mario - Bassi</strong> s'est formé en 2009 dans le but d'entreprendre un chemin de recherche visant à approfondir et à faire connaître le répertoire de musique de chambre pour trombone et piano, aussi intéressant que peu écouté."
+        ],
+        "body": [
+          "Ils se produisent en Italie et à l'étranger (France, Belgique, Russie, Allemagne), jouant pour divers événements et organisations tels que le festival Folliamusica, l'Association philharmonique ombrienne de Terni, le Centre culturel De Laugier à Portoferraio, le Festival San Giacomo à Bologne, les Amis de l'opéra à Pistoia et les Amis du Carlo Felice à Gênes, les Amis pour la musique à Venaria Reale, l'Académie de musique de Turin, Hirmos à Reggio Emilia, la Société humanitaire à Milan, lors de la 30e édition de l'ECIS à l'Université La Sapienza de Rome, le festival SCLAB à Ravenne, et le Festival Fiati à Novare.",
+          "Le Duo a remporté le 1er Prix absolu pour la catégorie Musique de chambre dans des concours tels que le Concours Rospigliosi à Lamporecchio, le Concours de la Riviera étrusque à Piombino, et le Concours Luigi Nono à Venaria Reale, où ils reçoivent également le Prix spécial Novecento (attribué à toutes les catégories pour la meilleure interprétation d'une pièce écrite après 1950), ainsi que le 1er Prix au Concours de la Ville de Piove di Sacco.",
+          "Des compositions de Riccardo Panfili (Iubilatio Doctoris Fausti) et Luigi Giachino (Sentieri Ritrovati) sont dédiées au Duo."
+        ]
+      }
+    },
+    "subscription": {
+      "intro": "Inscrivez-vous est simple:",
+      "form_fill": "<strong>Remplissez</strong> le formulaire ci-dessous",
+      "attachement": "Veuillez <strong>joindre</strong> une copie du paiement effectué par virement bancaire (voir ci-dessous pour les détails)",
+      "sending": "<strong>Envoyez</strong> en utilisant le bouton approprié",
+      "payment": {
+        "copy": "Cliquez sur les parties en gras pour copier les données",
+        "to": "Virement bancaire à l'ordre de",
+        "reference": "Objet",
+        "copied": {
+          "to": "Destinataire copié!",
+          "code": "Code copié!",
+          "reference": "Objet copié!"
+        }
+      },
+      "form": {
+        "error": "Remplissez correctement les champs obligatoires",
+        "name": "Prénom",
+        "surname": "Nom",
+        "phone": "Téléphone",
+        "email": "Email",
+        "pieces": {
+          "header": "Morceaux à étudier",
+          "title": "Titre",
+          "author": "Auteur",
+          "remove": "Supprimer",
+          "add": "Ajouter un morceau"
+        },
+        "intolerances": "Éventuelles intolérances",
+        "receipt": "Reçu de virement",
+        "format": "Format invalide, veuillez joindre un fichier .pdf",
+        "send": "Envoyer",
+        "alternative": "Si vous préférez les méthodes traditionnelles, <a class=\"fw-bold\" href=\"assets\\MODULO_ISCRIZIONE.pdf\">téléchargez le formulaire</a> à remplir manuellement et envoyez-le via <strong>WhatsApp</strong> à Francesco (<a href=\"https://wa.me/+393342791655\">334 279 1655</a>) ou Andrea (<a href=\"https://wa.me/+393384241404\">338 424 1404</a>) ou par <strong>email</strong> à <a href=\"mailto:banda.giuseppeverdi@libero.it\">banda.giuseppeverdi@libero.it</a>, en joignant également une <strong>copie du paiement effectué</strong>."
+      }
+    }
   }
 }

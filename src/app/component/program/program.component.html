@@ -4,101 +4,91 @@
     </div>
 
     <div class="row mt-3 text-center">
-        <!-- <p>
-            L'<strong>Associazione Culturale Filarmonica G. Verdi</strong> è lieta di offrire a studenti e professionisti l'opportunità di una Masterclass di trombone 
-            della durata di 4 giorni, dal 27 al 31 agosto 2024.
-        </p>
-        <p>
-            Il corso si terrà a <a href="https://www.comune.montebuono.ri.it/it" target="_blank" class="text-dark fw-bold">Montebuono</a>, in provincia di Rieti, e il docente per questa edizione sarà il <strong>Maestro Diego Di Mario</strong>, 
-            solista di fama internazionale e Primo Trombone dell'Orchestra Sinfonica Nazionale della RAI di Torino
-        </p> -->
-
         <p class="fs-5">
             <i class="fa-solid fa-location-dot"></i>
             &nbsp;
-            <a href="https://www.comune.montebuono.ri.it/it" target="_blank" class="text-dark fw-bold">Montebuono (RI)</a>
+            <a href="https://www.google.com/maps/place/02040+Montebuono+RI/@42.367088,12.5920309,16z/data=!3m1!4b1!4m6!3m5!1s0x132f1b1f54f97711:0xf6822a46ba0c706d!8m2!3d42.3674042!4d12.597368!16zL20vMGdtNXA5?entry=ttu" 
+                target="_blank" class="text-dark fw-bold">Montebuono (RI)</a>
         </p>
         <p class="fs-5 fw-bold">
             <i class="fa-regular fa-calendar"></i>
             &nbsp;
-            27-31 agosto 2024
+            {{"text.program.date" | translate}}
         </p>
     </div>
 
     <div class="row mt-3">
-        <div class="col my-3 d-flex justify-content-center">
+        <div class="col-12 col-md-6 my-3 d-flex justify-content-center">
             <div class="card text-center" style="border: none!important;">
                 <div class="card-body">
                     <h5 class="card-title text-red py-3"><i class="fa-regular fa-clock fa-lg"></i></h5>
-                    <h5 class="card-text">Lezioni individuali di <strong>45 minuti</strong> tutti i giorni per ogni allievo</h5>
+                    <h5 class="card-text" [innerHtml]="'text.program.lessons' | translate"></h5>
                 </div>
             </div>
         </div>
-        <div class="col my-3 d-flex justify-content-center">
+        <div class="col-12 col-md-6 my-3 d-flex justify-content-center">
             <div class="card text-center" style="border: none!important;">
                 <div class="card-body">
                     <h5 class="card-title text-red py-3"><i class="fa-solid fa-users fa-lg"></i></h5>
-                    <h5 class="card-text">Lezioni di <strong>musica d'insieme</strong> e <strong>passi d'orchestra</strong> in sezione</h5>
+                    <h5 class="card-text" [innerHtml]="'text.program.ensemble' | translate"></h5>
                 </div>
             </div>
         </div>
     </div>
     <div class="row mb-3">
-        <div class="col my-3 d-flex justify-content-center">
+        <div class="col-12 col-md-6 my-3 d-flex justify-content-center">
             <div class="card text-center" style="border: none!important;">
                 <div class="card-body">
                     <h5 class="card-title text-red py-3"><i class="fa-solid fa-music fa-lg"></i></h5>
-                    <h5 class="card-text">Concerto del <strong>Duo Di Mario Bassi</strong> giovedì 29 agosto ore 21</h5>
+                    <h5 class="card-text" [innerHtml]="'text.program.duo' | translate"></h5>
                 </div>
             </div>
         </div>
-        <div class="col my-3 d-flex justify-content-center">
+        <div class="col-12 col-md-6 my-3 d-flex justify-content-center">
             <div class="card text-center" style="border: none!important;">
                 <div class="card-body">
                     <h5 class="card-title text-red py-3"><i class="fa-solid fa-volume-high fa-lg"></i></h5>
-                    <h5 class="card-text"><strong>Concerto finale</strong> degli allievi sabato 31 agosto ore 18</h5>
+                    <h5 class="card-text" [innerHtml]="'text.program.concert' | translate"></h5>
                 </div>
             </div>
         </div>
     </div>
     
     <div class="row py-4">
-        <p>Sarà cura dell'Associazione Culturale Filarmonica G. Verdi  provvedere alla sistemazione dei locali 
-            per l'alloggio di tutti gli allievi iscritti, in forma <strong>del tutto gratutita</strong>.</p>
-        <p>Per andare incontro alle esigenze di allievi provenienti da lontano, offriamo un pacchetto di iscrizione comprensivo 
-            anche di <strong>pranzi e cene</strong> per tutti i giorni effettivi di masterclass, a prezzi popolari.</p>
-            <p>Di seguito il dettaglio dei costi di iscrizione</p>
+        <p [innerHtml]="'text.program.accomodation' | translate"></p>
+        <p [innerHtml]="'text.program.meal' | translate"></p>
+            <p>{{'text.program.subscription' | translate}}</p>
         </div>
     <div class="row text-center">
         <div class="col-12 col-md-6 my-3 d-flex justify-content-center">
-            <div class="card rounded-3 shadow-sm">
+            <div class="card rounded-3 shadow-sm width-100">
                 <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Solo masterclass</h4>
+                    <h4 class="my-0 fw-normal">{{'text.program.master_only' | translate}}</h4>
                 </div>
                 <div class="card-body">
                     <h2 class="card-title text-red">€340</h2>
                     <ul class="card-text list-unstyled mt-3 mb-4">
-                        <li>Iscrizione al corso</li>
-                        <li>Alloggio gratuito</li>
-                        <li>4 colazioni</li>
+                        <li>{{'text.program.details.subscription' | translate}}</li>
+                        <li>{{'text.program.details.accomodation' | translate}}</li>
+                        <li>{{'text.program.details.breakfast' | translate}}</li>
                     </ul>
                 </div>
             </div>
         </div>
         
         <div class="col-12 col-md-6 my-3 d-flex justify-content-center">
-            <div class="card rounded-3 shadow-sm">
+            <div class="card rounded-3 shadow-sm width-100">
                 <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Pensione completa</h4>
+                    <h4 class="my-0 fw-normal">{{'text.program.full_pack' | translate}}</h4>
                 </div>
                 <div class="card-body">
                     <h2 class="card-title text-red">€400</h2>
                     <ul class="card-text list-unstyled mt-3 mb-4">
-                        <li>Iscrizione al corso</li>
-                        <li>Alloggio gratuito</li>
-                        <li>4 colazioni</li>
-                        <li><strong>4 pranzi</strong></li>
-                        <li><strong>4 cene</strong></li>
+                        <li>{{'text.program.details.subscription' | translate}}</li>
+                        <li>{{'text.program.details.accomodation' | translate}}</li>
+                        <li>{{'text.program.details.breakfast' | translate}}</li>
+                        <li><strong>{{'text.program.details.lunch' | translate}}</strong></li>
+                        <li><strong>{{'text.program.details.dinner' | translate}}</strong></li>
                     </ul>
                 </div>
             </div>
@@ -107,6 +97,6 @@
     </div>
     
     <div class="row text-center mt-4">
-        <p><strong>L'effettiva partenza del corso è condizionata al raggiungimento minimo di 8 allievi iscritti.</strong></p>
+        <p><strong>{{'text.program.condition' | translate}}</strong></p>
     </div>
 </div>
