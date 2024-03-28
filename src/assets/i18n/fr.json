@@ -88,6 +88,7 @@
       }
     },
     "subscription": {
+      "deadline": "Date limite d'inscription 15 juillet 2024",
       "intro": "Inscrivez-vous est simple:",
       "form_fill": "<strong>Remplissez</strong> le formulaire ci-dessous",
       "attachement": "Veuillez <strong>joindre</strong> une copie du paiement effectué par virement bancaire (voir ci-dessous pour les détails)",

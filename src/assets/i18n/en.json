@@ -88,6 +88,7 @@
         }
       },
       "subscription": {
+        "deadline": "Registration deadline July 15th, 2024",
         "intro": "Signing up is easy:",
         "form_fill": "<strong>Fill out</strong> the form below",
         "attachement": "Please <strong>attach</strong> a copy of the completed payment via bank transfer (scroll down for details)",
