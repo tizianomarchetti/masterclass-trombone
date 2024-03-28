@@ -110,7 +110,7 @@
           "phone": "Phone",
           "email": "Email",
           "pieces": {
-            "header": "Pieces to study",
+            "header": "Pieces requiring piano accompaniment",
             "title": "Title",
             "author": "Author",
             "remove": "Remove",
