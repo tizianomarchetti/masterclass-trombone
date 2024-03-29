@@ -24,19 +24,19 @@
         <ul class="list-unstyled">
             <li class="mb-2">{{'text.subscription.payment.to' | translate}} 
                 <strong role="button" [class.text-success]="copied.intestazione" (click)="copy($event, 'intestazione')">
-                    {{!copied.intestazione ? 'Associazione Culturale Filarmonica G. Verdi' : ('text.subscription.payment.copied.to' | translate)}}
+                    {{!copied.intestazione ? 'Associazione Culturale Filarmonica Giuseppe Verdi' : ('text.subscription.payment.copied.to' | translate)}}
                     &nbsp;<i *ngIf="copied.intestazione" class="fa-solid fa-check text-success"></i>
                 </strong>
             </li>
             <li class="mb-2">IBAN 
                 <strong role="button" [class.text-success]="copied.iban" (click)="copy($event, 'iban')">
-                    {{!copied.iban ? 'IT53D546782632106546216' : ('text.subscription.payment.copied.code' | translate)}}
+                    {{!copied.iban ? 'IT18D0538773670000042131435' : ('text.subscription.payment.copied.code' | translate)}}
                     &nbsp;<i *ngIf="copied.iban" class="fa-solid fa-check text-success"></i>
                 </strong>
             </li> 
             <li class="mb-2">{{'text.subscription.payment.reference' | translate}} 
                 <strong role="button" [class.text-success]="copied.causale" (click)="copy($event, 'causale')">
-                    {{!copied.causale ? 'Iscrizione Masterclass trombone 2024' : ('text.subscription.payment.copied.reference' | translate)}}
+                    {{!copied.causale ? ('Iscrizione Masterclass trombone 2024 - ' + fullName) : ('text.subscription.payment.copied.reference' | translate)}}
                     &nbsp;<i *ngIf="copied.causale" class="fa-solid fa-check text-success"></i>
                 </strong>
             </li>
@@ -46,12 +46,12 @@
     <form class="row g-3 mt-3" enctype="multipart/form-data">
         <div class="col-md-6">
             <label for="name" class="form-label fw-bold">{{'text.subscription.form.name' | translate}}*</label>
-            <input type="text" class="form-control" [class.border-danger]="!validForm.name" (keyup)="!valid ? validateForm() : null" id="name" name="name" 
+            <input type="text" class="form-control" [class.border-danger]="!validForm.name" (keyup)="!valid ? validateForm() : refreshFullName()" id="name" name="name" 
                 [(ngModel)]="form.name">
         </div>
         <div class="col-md-6">
             <label for="surname" class="form-label fw-bold">{{'text.subscription.form.surname' | translate}}*</label>
-            <input type="text" class="form-control" [class.border-danger]="!validForm.surname" (keyup)="!valid ? validateForm() : null" id="surname" name="surname" 
+            <input type="text" class="form-control" [class.border-danger]="!validForm.surname" (keyup)="!valid ? validateForm() : refreshFullName()" id="surname" name="surname" 
                 [(ngModel)]="form.surname">
         </div>
         <div class="col-md-6">
@@ -131,15 +131,6 @@
 
     <div class="row mt-5">
         <p [innerHTML]="'text.subscription.form.alternative' | translate"></p>
-        <!-- <ul class="list-unstyled">
-            <li class="mb-3"><strong>Compila</strong> il modulo qui sotto o, se preferisci, <a href="">scarica il modulo</a> da compilare manualmente</li>
-            <li class="mb-3"><strong>Scaricalo</strong> in PDF e firmalo</li>
-            <li class="mb-3">Invialo via <strong>WhatsApp</strong> a Francesco (<a href="https://wa.me/+393342791655">334 279 1655</a>) 
-                o Andrea (<a href="https://wa.me/+393384241404">338 424 1404</a>) 
-                o per <strong>email</strong> a <a href="mailto:banda.giuseppeverdi@libero.it">banda.giuseppeverdi@libero.it</a>
-            </li>
-            <li>Invia anche una copia dell'avvenuto <strong>pagamento</strong> della quota di iscrizione (scorri per i dettagli)</li>
-        </ul> -->
     </div>
 </div>
 

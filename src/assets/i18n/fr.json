@@ -91,12 +91,13 @@
       "deadline": "Date limite d'inscription 15 juillet 2024",
       "intro": "Inscrivez-vous est simple:",
       "form_fill": "<strong>Remplissez</strong> le formulaire ci-dessous",
-      "attachement": "Veuillez <strong>joindre</strong> une copie du paiement effectué par virement bancaire (voir ci-dessous pour les détails)",
+      "attachement": "Veuillez <strong>joindre</strong> une copie du paiement effectué de 50 % du montant total (<strong>170€</strong> pour la masterclass seule, <strong>200€</strong> pour la pension complète) par virement bancaire (voir ci-dessous pour les détails)",
       "sending": "<strong>Envoyez</strong> en utilisant le bouton approprié",
       "payment": {
         "copy": "Cliquez sur les parties en gras pour copier les données",
         "to": "Virement bancaire à l'ordre de",
         "reference": "Objet",
+        "fullName": "<Prénom Nom>",
         "copied": {
           "to": "Destinataire copié!",
           "code": "Code copié!",
@@ -120,7 +121,7 @@
         "receipt": "Reçu de virement",
         "format": "Format invalide, veuillez joindre un fichier .pdf",
         "send": "Envoyer",
-        "alternative": "Si vous préférez les méthodes traditionnelles, <a class=\"fw-bold\" href=\"assets\\MODULO_ISCRIZIONE.pdf\">téléchargez le formulaire</a> à remplir manuellement et envoyez-le via <strong>WhatsApp</strong> à Francesco (<a href=\"https://wa.me/+393342791655\">334 279 1655</a>) ou Andrea (<a href=\"https://wa.me/+393384241404\">338 424 1404</a>) ou par <strong>email</strong> à <a href=\"mailto:banda.giuseppeverdi@libero.it\">banda.giuseppeverdi@libero.it</a>, en joignant également une <strong>copie du paiement effectué</strong>."
+        "alternative": "Si vous préférez les méthodes traditionnelles, <a class=\"fw-bold\" href=\"assets\\MODULO_ISCRIZIONE_fr.pdf\">téléchargez le formulaire</a> à remplir manuellement et envoyez-le via <strong>WhatsApp</strong> à Francesco (<a href=\"https://wa.me/+393342791655\">334 279 1655</a>) ou Andrea (<a href=\"https://wa.me/+393384241404\">338 424 1404</a>) ou par <strong>email</strong> à <a href=\"mailto:banda.giuseppeverdi@libero.it\">banda.giuseppeverdi@libero.it</a>, en joignant également une <strong>copie du paiement effectué</strong>."
       }
     }
   }

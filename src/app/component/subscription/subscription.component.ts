@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { SpinnerVisibilityService } from 'ng-http-loader';
 import { AppService } from 'src/app/services/app.service';
 
@@ -17,6 +18,9 @@ export class SubscriptionComponent implements OnInit {
     'application/pdf' //pdf
     // 'text/plain' //txt
   ];
+
+  fullName: string;
+  fullNameValue: string;
 
   copied = {
     intestazione: false,
@@ -52,7 +56,13 @@ export class SubscriptionComponent implements OnInit {
     ok: false
   }
 
-  constructor(private appService: AppService, private spinner: SpinnerVisibilityService) { }
+  constructor(private appService: AppService, private spinner: SpinnerVisibilityService,
+    private translate: TranslateService) { 
+      translate.stream('text.subscription.payment.fullName').subscribe(res => {
+        this.fullNameValue = res;
+        this.fullName = this.fullNameValue;
+      });
+  }
 
   ngOnInit() {
   }
@@ -85,13 +95,6 @@ export class SubscriptionComponent implements OnInit {
       this.validateForm();
   }
 
-  // uploadFile(event) {
-  //   this.form.file = event.target.files[0];
-
-  //   if (!this.valid)
-  //     this.validateForm();
-  // }
-
   uploadFile(event: any) {
     if (!event) { //per gestire il rimuovi file
       this.form.file = null;
@@ -105,15 +108,6 @@ export class SubscriptionComponent implements OnInit {
     if(event.target.files.length > 0) {
       this.fileType = file.type;
       this.form.file = file;
-      // const reader = new FileReader();
-      // reader.readAsDataURL(file);
-      // this.spinner.show();
-      // reader.onload = () => {
-      //   this.form.file = reader.result;
-      //   if (!this.valid)
-      //     this.validateForm();
-      //   this.spinner.hide();
-      // }
     }
     else this.form.file = null;
 
@@ -202,6 +196,10 @@ export class SubscriptionComponent implements OnInit {
       document.getElementById('errorMessage').scrollIntoView();
     }
 
+    if (this.validForm.name && this.validForm.surname)
+      this.fullName = this.form.name + ' ' + this.form.surname;
+    else this.fullName = this.fullNameValue;
+
     return this.valid;
   }
 
@@ -210,6 +208,12 @@ export class SubscriptionComponent implements OnInit {
     if (this.form.email !== null && !this.form.email.match(mailFormatRegex)) 
       return false;
     return true;
+  }
+
+  refreshFullName() {
+    if (this.form.name != '' && this.form.surname != '')
+      this.fullName = this.form.name + ' ' + this.form.surname;
+    else this.fullName = this.fullNameValue;
   }
 
 }
