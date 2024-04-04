@@ -17,38 +17,12 @@
         </p>
     </div>
 
-    <div class="row mt-3">
-        <div class="col-12 col-md-6 my-3 d-flex justify-content-center">
+    <div *ngFor="let row of programCards.rows" [class]="'row ' + row.margin ">
+        <div *ngFor="let card of row.cols" class="col-12 col-md-6 my-3 d-flex justify-content-center">
             <div class="card text-center" style="border: none!important;">
                 <div class="card-body">
-                    <h5 class="card-title text-red py-3"><i class="fa-regular fa-clock fa-lg"></i></h5>
-                    <h5 class="card-text" [innerHtml]="'text.program.lessons' | translate"></h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 my-3 d-flex justify-content-center">
-            <div class="card text-center" style="border: none!important;">
-                <div class="card-body">
-                    <h5 class="card-title text-red py-3"><i class="fa-solid fa-users fa-lg"></i></h5>
-                    <h5 class="card-text" [innerHtml]="'text.program.ensemble' | translate"></h5>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row mb-3">
-        <div class="col-12 col-md-6 my-3 d-flex justify-content-center">
-            <div class="card text-center" style="border: none!important;">
-                <div class="card-body">
-                    <h5 class="card-title text-red py-3"><i class="fa-solid fa-music fa-lg"></i></h5>
-                    <h5 class="card-text" [innerHtml]="'text.program.duo' | translate"></h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 my-3 d-flex justify-content-center">
-            <div class="card text-center" style="border: none!important;">
-                <div class="card-body">
-                    <h5 class="card-title text-red py-3"><i class="fa-solid fa-volume-high fa-lg"></i></h5>
-                    <h5 class="card-text" [innerHtml]="'text.program.concert' | translate"></h5>
+                    <h5 class="card-title text-red py-3"><i [class]="card.class + ' fa-lg'"></i></h5>
+                    <h5 class="card-text" [innerHtml]="card.innerHtml | translate"></h5>
                 </div>
             </div>
         </div>
@@ -57,46 +31,27 @@
     <div class="row py-4">
         <p [innerHtml]="'text.program.accomodation' | translate"></p>
         <p [innerHtml]="'text.program.meal' | translate"></p>
-            <p>{{'text.program.subscription' | translate}}</p>
-        </div>
+        <p>{{'text.program.subscription' | translate}}</p>
+    </div>
+
     <div class="row text-center">
-        <div class="col-12 col-md-6 my-3 d-flex justify-content-center">
+        <div *ngFor="let card of priceCards" class="col-12 col-md-6 my-3 d-flex justify-content-center">
             <div class="card rounded-3 shadow-sm width-100">
                 <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">{{'text.program.master_only' | translate}}</h4>
+                    <h4 class="my-0 fw-normal">{{card.title | translate}}</h4>
                 </div>
                 <div class="card-body">
-                    <h2 class="card-title text-red">€340</h2>
+                    <h2 class="card-title text-red">{{card.price}}</h2>
                     <ul class="card-text list-unstyled mt-3 mb-4">
-                        <li>{{'text.program.details.subscription' | translate}}</li>
-                        <li>{{'text.program.details.accomodation' | translate}}</li>
-                        <li>{{'text.program.details.breakfast' | translate}}</li>
+                        <li *ngFor="let li of card.listItems" [innerHtml]="li | translate"></li>
                     </ul>
                 </div>
             </div>
         </div>
-        
-        <div class="col-12 col-md-6 my-3 d-flex justify-content-center">
-            <div class="card rounded-3 shadow-sm width-100">
-                <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">{{'text.program.full_pack' | translate}}</h4>
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title text-red">€400</h2>
-                    <ul class="card-text list-unstyled mt-3 mb-4">
-                        <li>{{'text.program.details.subscription' | translate}}</li>
-                        <li>{{'text.program.details.accomodation' | translate}}</li>
-                        <li>{{'text.program.details.breakfast' | translate}}</li>
-                        <li><strong>{{'text.program.details.lunch' | translate}}</strong></li>
-                        <li><strong>{{'text.program.details.dinner' | translate}}</strong></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
     </div>
     
     <div class="row text-center mt-4">
         <p><strong>{{'text.program.condition' | translate}}</strong></p>
     </div>
+
 </div>

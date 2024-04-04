@@ -18,7 +18,7 @@
       "ensemble": "Lezioni di <strong>musica d'insieme</strong> e <strong>passi d'orchestra</strong> in sezione",
       "duo": "Concerto del <strong>Duo Di Mario - Bassi</strong> giovedì 29 agosto ore 21",
       "concert": "<strong>Concerto finale</strong> degli allievi sabato 31 agosto ore 18",
-      "accomodation": "Sarà cura dell'Associazione Culturale Filarmonica G. Verdi  provvedere alla sistemazione dei locali per l'alloggio di tutti gli allievi iscritti, in forma <strong>del tutto gratutita</strong>.",
+      "accomodation": "Sarà cura dell'Associazione Culturale Filarmonica G. Verdi  provvedere alla sistemazione dei locali per l'alloggio di tutti gli allievi iscritti, in forma <strong>del tutto gratutita</strong>, compresa la notte tra il 31 agosto e il 1 settembre.",
       "meal": "Per andare incontro alle esigenze di allievi provenienti da lontano, offriamo un pacchetto di iscrizione comprensivo anche di <strong>pranzi e cene</strong> per tutti i giorni effettivi di masterclass, a prezzi popolari.",
       "subscription": "Di seguito il dettaglio dei costi di iscrizione",
       "master_only": "Solo masterclass",
@@ -26,9 +26,9 @@
       "details": {
         "subscription": "Iscrizione al corso",
         "accomodation": "Alloggio gratuito",
-        "breakfast": "4 colazioni",
-        "lunch": "4 pranzi",
-        "dinner": "4 cene"
+        "breakfast": "5 colazioni",
+        "lunch": "<strong>5 pranzi</strong>",
+        "dinner": "<strong>5 cene</strong>"
       },
       "condition": "L'effettiva partenza del corso è condizionata al raggiungimento minimo di 8 allievi iscritti."
     },
@@ -91,7 +91,7 @@
       "deadline": "Termine iscrizioni 15 luglio 2024",
       "intro": "Iscriversi è semplice:",
       "form_fill": "<strong>Compila</strong> il modulo qui sotto",
-      "attachement": "<strong>Allega</strong> una copia dell'avvenuto pagamento del 50% dell'importo totale (<strong>170€</strong> solo masterclass, <strong>200€</strong> pensione completa) tramite bonifico (scorri per i dettagli)",
+      "attachement": "<strong>Allega</strong> una copia dell'avvenuto pagamento della caparra di <strong>150€</strong> tramite bonifico (scorri per i dettagli)",
       "sending": "<strong>Invia</strong> tramite l'apposito pulsante",
       "payment": {
         "copy": "clicca sulle parti in grassetto per copiare i dati",

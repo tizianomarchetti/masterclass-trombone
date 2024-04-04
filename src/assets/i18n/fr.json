@@ -18,7 +18,7 @@
       "ensemble": "Cours de <strong>musique d'ensemble</strong> et <strong>extraits d'orchestre</strong> en section",
       "duo": "Concert du <strong>Duo Di Mario - Bassi</strong> jeudi 29 août à 21 heures",
       "concert": "<strong>Concert final</strong> des élèves samedi 31 août à 18 heures",
-      "accomodation": "Sera de la responsabilité de l'Association Culturelle Philharmonique G. Verdi de veiller à l'aménagement des locaux pour le logement de tous les élèves inscrits, de manière <strong>totalement gratuite</strong>.",
+      "accomodation": "Sera de la responsabilité de l'Association Culturelle Philharmonique G. Verdi de veiller à l'aménagement des locaux pour le logement de tous les élèves inscrits, de manière <strong>totalement gratuite</strong>, y compris la nuit du 31 août au 1er septembre.",
       "meal": "Pour répondre aux besoins des élèves venant de loin, nous proposons un forfait d'inscription comprenant également <strong>les déjeuners et dîners</strong> pour tous les jours effectifs de la masterclass, à des prix populaires.",
       "subscription": "Ci-dessous le détail des frais d'inscription",
       "master_only": "Masterclass seulement",
@@ -26,9 +26,9 @@
       "details": {
         "subscription": "Inscription au cours",
         "accomodation": "Hébergement gratuit",
-        "breakfast": "4 petits déjeuners",
-        "lunch": "4 déjeuners",
-        "dinner": "4 dîners"
+        "breakfast": "5 petits déjeuners",
+        "lunch": "<strong>5 déjeuners</strong>",
+        "dinner": "<strong>5 dîners</strong>"
       },
       "condition": "Le début effectif du cours est conditionné par l'atteinte d'un minimum de 8 élèves inscrits."
     },
@@ -91,7 +91,7 @@
       "deadline": "Date limite d'inscription 15 juillet 2024",
       "intro": "Inscrivez-vous est simple:",
       "form_fill": "<strong>Remplissez</strong> le formulaire ci-dessous",
-      "attachement": "Veuillez <strong>joindre</strong> une copie du paiement effectué de 50 % du montant total (<strong>170€</strong> pour la masterclass seule, <strong>200€</strong> pour la pension complète) par virement bancaire (voir ci-dessous pour les détails)",
+      "attachement": "Veuillez <strong>joindre</strong> une copie du paiement effectué de l'acompte de <strong>150€</strong> par virement bancaire (voir ci-dessous pour les détails)",
       "sending": "<strong>Envoyez</strong> en utilisant le bouton approprié",
       "payment": {
         "copy": "Cliquez sur les parties en gras pour copier les données",

@@ -18,7 +18,7 @@
         "ensemble": "<strong>Ensemble music</strong> lessons and <strong>orchestral excerpts</strong> in section",
         "duo": "<strong>Duo Di Mario - Bassi</strong> concert on Thursday, August 29th at 9:00PM",
         "concert": "<strong>Final concert</strong> by the students on Saturday, August 31st at 6:00PM",
-        "accomodation": "It will be the responsibility of the Cultural Association Philharmonic G. Verdi to arrange accommodation for all enrolled students, <strong>completely free of charge</strong>.",
+        "accomodation": "It will be the responsibility of the Cultural Association Philharmonic G. Verdi to arrange accommodation for all enrolled students, <strong>completely free of charge</strong>, including the night between August 31st and September 1st.",
         "meal": "To meet the needs of students coming from afar, we offer a registration package that includes <strong>lunches and dinners</strong> for all actual days of the masterclass, at popular prices.",
         "subscription": "Below the breakdown of the registration costs",
         "master_only": "Masterclass only",
@@ -26,9 +26,9 @@
         "details": {
           "subscription": "Course registration",
           "accomodation": "Free accommodation",
-          "breakfast": "4 breakfasts",
-          "lunch": "4 lunches",
-          "dinner": "4 dinners"
+          "breakfast": "5 breakfasts",
+          "lunch": "<strong>5 lunches</strong>",
+          "dinner": "<strong>5 dinners</strong>"
         },
         "condition": "The actual start of the course is conditioned upon reaching a minimum of 8 enrolled students."
       },
@@ -91,7 +91,7 @@
         "deadline": "Registration deadline July 15th, 2024",
         "intro": "Signing up is easy:",
         "form_fill": "<strong>Fill out</strong> the form below",
-        "attachement": "Please <strong>attach</strong> a copy of the completed payment of 50% of the total amount (<strong>€170</strong> for masterclass only, <strong>€200</strong> for full board) via bank transfer (scroll down for details)",
+        "attachement": "Please <strong>attach</strong> a copy of the completed payment of the deposit of <strong>€150</strong> via bank transfer (scroll down for details)",
         "sending": "<strong>Send</strong> using the designated button",
         "payment": {
           "copy": "Click on the bold parts to copy the data",
