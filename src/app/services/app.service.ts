@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { of } from 'rxjs';
 
 // const root = "https://web-cv-back-end.onrender.com/";
-const root = "https://masterclasstrombone.altervista.org/rest/api/v1/";
+const root = "https://tizianoesofia.altervista.org/api/v1/";
 
 @Injectable({
   providedIn: 'root'
