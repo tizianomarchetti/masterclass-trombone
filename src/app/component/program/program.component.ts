@@ -40,7 +40,7 @@ export class ProgramComponent implements OnInit {
   priceCards = [
     {
       title: 'text.program.master_only',
-      price: '€350',
+      price: '€380',
       listItems: [
         'text.program.details.subscription',
         'text.program.details.accomodation',
@@ -49,7 +49,7 @@ export class ProgramComponent implements OnInit {
     },
     {
       title: 'text.program.full_pack',
-      price: '€430',
+      price: '€450',
       listItems: [
         'text.program.details.subscription',
         'text.program.details.accomodation',
